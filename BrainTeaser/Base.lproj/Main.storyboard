@@ -78,6 +78,11 @@
                             <constraint firstItem="3Pf-VX-Zm6" firstAttribute="top" secondItem="zwF-xm-QPo" secondAttribute="bottom" constant="25" id="tu0-KI-vfR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="k00-u1-VaC" id="PKA-eN-4kf"/>
+                        <outlet property="loginConstraint" destination="8wS-HE-rWU" id="xal-ZV-4Kw"/>
+                        <outlet property="passwordConstraint" destination="Eco-ek-fSV" id="DUq-Ky-eoc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
