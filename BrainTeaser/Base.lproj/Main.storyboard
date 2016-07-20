@@ -24,31 +24,46 @@
                                     <constraint firstAttribute="width" constant="200" id="7b9-eg-zzj"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-xm-QPo">
-                                <rect key="frame" x="175" y="251" width="250" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-xm-QPo" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="175" y="251" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="QBQ-vn-abm"/>
+                                    <constraint firstAttribute="height" constant="40" id="QBQ-vn-abm"/>
                                     <constraint firstAttribute="width" constant="250" id="SfR-K7-NCW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Pf-VX-Zm6">
-                                <rect key="frame" x="175" y="321" width="250" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Pf-VX-Zm6" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="175" y="316" width="250" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="ggm-FO-qtO"/>
-                                    <constraint firstAttribute="height" constant="35" id="jc8-Wx-3A0"/>
+                                    <constraint firstAttribute="height" constant="40" id="jc8-Wx-3A0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doR-Ke-j8S">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doR-Ke-j8S" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="250" y="388" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.5725490196078431" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="X26-fT-2nU"/>
                                     <constraint firstAttribute="height" constant="35" id="it5-Er-ChM"/>
                                 </constraints>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -60,7 +75,7 @@
                             <constraint firstItem="zwF-xm-QPo" firstAttribute="top" secondItem="sEQ-dx-KDi" secondAttribute="bottom" constant="63" id="SLJ-57-NEh"/>
                             <constraint firstItem="sEQ-dx-KDi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ed7-m9-7RS"/>
                             <constraint firstItem="zwF-xm-QPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k00-u1-VaC"/>
-                            <constraint firstItem="3Pf-VX-Zm6" firstAttribute="top" secondItem="zwF-xm-QPo" secondAttribute="bottom" constant="35" id="tu0-KI-vfR"/>
+                            <constraint firstItem="3Pf-VX-Zm6" firstAttribute="top" secondItem="zwF-xm-QPo" secondAttribute="bottom" constant="25" id="tu0-KI-vfR"/>
                         </constraints>
                     </view>
                 </viewController>
