@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import pop
 
 class LoginVC: UIViewController {
 
@@ -29,7 +28,7 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        self.animEngine.animateOnScreen(2)
+        self.animEngine.animateOnScreen(1)
     }
 
 

@@ -57,7 +57,7 @@ class AnimationEngine {
                 
                 if(index > 0){
                     moveAnim.dynamicsFriction += 10 + CGFloat(index)
-                    moveAnim.dynamicsMass = 5
+                    moveAnim.dynamicsMass = 2
                 }
                 
                 let con = self.constraints[index]
@@ -69,4 +69,16 @@ class AnimationEngine {
         }
         
     }
+    
+    class func animateToPosition(view: UIView, position: CGPoint, completion: ((POPAnimation!, Bool) -> Void)) {
+        let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
+        moveAnim.toValue = NSValue(CGPoint: position)
+        moveAnim.springBounciness = 8
+        moveAnim.springSpeed = 8
+        moveAnim.completionBlock = completion
+        view.pop_addAnimation(moveAnim, forKey: "moveToPosition")
+    }
+    
+    
+    
 }

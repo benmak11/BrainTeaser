@@ -126,6 +126,9 @@
                                         <include reference="Dsh-Ow-yGL"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="yesPressed:" destination="JHv-vO-15H" eventType="touchUpInside" id="0fh-be-DOm"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-7N-vuo" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="250" y="388" width="100" height="35"/>
@@ -149,6 +152,9 @@
                                         <include reference="Wl1-Dg-2PE"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="noPressed:" destination="JHv-vO-15H" eventType="touchUpInside" id="U3x-CT-JzF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUJ-ga-px5">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -175,7 +181,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gUJ-ga-px5" firstAttribute="top" secondItem="LiZ-ej-O7z" secondAttribute="bottom" constant="15" id="ClB-Dr-fSz"/>
+                            <constraint firstItem="gUJ-ga-px5" firstAttribute="top" secondItem="LiZ-ej-O7z" secondAttribute="bottom" constant="70" id="ClB-Dr-fSz">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstItem="Oph-7N-vuo" firstAttribute="leading" secondItem="efF-YJ-DTD" secondAttribute="leadingMargin" id="F9l-jo-E9G"/>
                             <constraint firstItem="hIL-6c-dwF" firstAttribute="top" secondItem="htL-x1-KGA" secondAttribute="bottom" constant="20" id="XfM-Dt-lLu"/>
                             <constraint firstItem="htL-x1-KGA" firstAttribute="trailing" secondItem="efF-YJ-DTD" secondAttribute="trailingMargin" id="Zav-pa-uRG"/>
@@ -213,6 +221,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="noBtn" destination="Oph-7N-vuo" id="p6Y-Tm-FAy"/>
+                        <outlet property="titleLbl" destination="gUJ-ga-px5" id="PRB-RQ-Rd9"/>
+                        <outlet property="yesBtn" destination="htL-x1-KGA" id="Cok-7J-szY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUS-Nc-XJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
