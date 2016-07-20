@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import pop
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
