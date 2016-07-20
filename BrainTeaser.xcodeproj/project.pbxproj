@@ -83,8 +83,8 @@
 		A7A363E01D3F48A3006BBE4C /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
-				A787D7571D3F4E85002475E6 /* View */,
 				A787D7581D3F4E8C002475E6 /* Controller */,
+				A787D7571D3F4E85002475E6 /* View */,
 				A7A363E11D3F48A3006BBE4C /* AppDelegate.swift */,
 				A7A363E51D3F48A3006BBE4C /* Main.storyboard */,
 				A7A363E81D3F48A3006BBE4C /* Assets.xcassets */,
