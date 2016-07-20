@@ -10,6 +10,9 @@
 		A787D75A1D3F4EB2002475E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787D7591D3F4EB2002475E6 /* CustomTextField.swift */; };
 		A787D75C1D3F50CF002475E6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787D75B1D3F50CF002475E6 /* CustomButton.swift */; };
 		A787D75F1D3F5A84002475E6 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787D75E1D3F5A84002475E6 /* AnimationEngine.swift */; };
+		A787D7611D3F639C002475E6 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787D7601D3F639C002475E6 /* GameVC.swift */; };
+		A787D7631D3F6561002475E6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787D7621D3F6561002475E6 /* Card.swift */; };
+		A787D7651D3F656E002475E6 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = A787D7641D3F656E002475E6 /* Card.xib */; };
 		A7A363E21D3F48A3006BBE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A363E11D3F48A3006BBE4C /* AppDelegate.swift */; };
 		A7A363E41D3F48A3006BBE4C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A363E31D3F48A3006BBE4C /* LoginVC.swift */; };
 		A7A363E71D3F48A3006BBE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A363E51D3F48A3006BBE4C /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		A787D7591D3F4EB2002475E6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A787D75B1D3F50CF002475E6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A787D75E1D3F5A84002475E6 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		A787D7601D3F639C002475E6 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		A787D7621D3F6561002475E6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A787D7641D3F656E002475E6 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		A7A363DE1D3F48A3006BBE4C /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A363E11D3F48A3006BBE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A363E31D3F48A3006BBE4C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 			children = (
 				A787D7591D3F4EB2002475E6 /* CustomTextField.swift */,
 				A787D75B1D3F50CF002475E6 /* CustomButton.swift */,
+				A787D7621D3F6561002475E6 /* Card.swift */,
+				A787D7641D3F656E002475E6 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -60,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				A7A363E31D3F48A3006BBE4C /* LoginVC.swift */,
+				A787D7601D3F639C002475E6 /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				A7A363EC1D3F48A3006BBE4C /* LaunchScreen.storyboard in Resources */,
 				A7A363E91D3F48A3006BBE4C /* Assets.xcassets in Resources */,
 				A7A363E71D3F48A3006BBE4C /* Main.storyboard in Resources */,
+				A787D7651D3F656E002475E6 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +258,10 @@
 			files = (
 				A787D75C1D3F50CF002475E6 /* CustomButton.swift in Sources */,
 				A7A363E41D3F48A3006BBE4C /* LoginVC.swift in Sources */,
+				A787D7631D3F6561002475E6 /* Card.swift in Sources */,
 				A7A363E21D3F48A3006BBE4C /* AppDelegate.swift in Sources */,
 				A787D75F1D3F5A84002475E6 /* AnimationEngine.swift in Sources */,
+				A787D7611D3F639C002475E6 /* GameVC.swift in Sources */,
 				A787D75A1D3F4EB2002475E6 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
