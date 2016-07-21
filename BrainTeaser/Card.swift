@@ -15,6 +15,7 @@ class Card: UIView {
     var currentShape: String!
     
     @IBOutlet weak var shapeImage: UIImageView!
+    @IBOutlet weak var statusImage: UIImageView!
     
     @IBInspectable var cornerRadius: CGFloat = 3.0 {
         didSet {
@@ -46,6 +47,7 @@ class Card: UIView {
         
         currentShape = shapes[Int(arc4random_uniform(3))]
         shapeImage.image = UIImage(named: currentShape)
+        statusImage.hidden = true
     }
 
 }

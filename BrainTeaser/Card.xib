@@ -18,19 +18,30 @@
                         <constraint firstAttribute="width" constant="200" id="p2i-ar-IhH"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="I7T-YG-5T7">
+                    <rect key="frame" x="170" y="200" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iRo-IJ-edc"/>
+                        <constraint firstAttribute="width" constant="80" id="zVh-y1-794"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="uG5-W0-KzF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AfI-n9-nfc"/>
                 <constraint firstItem="uG5-W0-KzF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OG6-Bs-tuD"/>
+                <constraint firstAttribute="trailing" secondItem="I7T-YG-5T7" secondAttribute="trailing" id="wd5-wt-9l8"/>
+                <constraint firstAttribute="bottom" secondItem="I7T-YG-5T7" secondAttribute="bottom" id="zqX-vz-UmY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="shapeImage" destination="uG5-W0-KzF" id="YL5-4R-8LE"/>
+                <outlet property="statusImage" destination="I7T-YG-5T7" id="HRi-BG-fjx"/>
             </connections>
         </view>
     </objects>
     <resources>
+        <image name="correct" width="48" height="48"/>
         <image name="shape1" width="268" height="143"/>
     </resources>
 </document>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -178,15 +179,39 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs4-HU-799">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Gm8-49-oin"/>
+                                    <constraint firstAttribute="width" constant="100" id="HcD-2K-0Vd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gm8-49-oin"/>
+                                        <exclude reference="HcD-2K-0Vd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gm8-49-oin"/>
+                                        <include reference="HcD-2K-0Vd"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vs4-HU-799" firstAttribute="centerX" secondItem="efF-YJ-DTD" secondAttribute="centerX" id="0Yj-hY-nuO"/>
                             <constraint firstItem="gUJ-ga-px5" firstAttribute="top" secondItem="LiZ-ej-O7z" secondAttribute="bottom" constant="70" id="ClB-Dr-fSz">
-                                <variation key="widthClass=compact" constant="50"/>
+                                <variation key="widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="Oph-7N-vuo" firstAttribute="leading" secondItem="efF-YJ-DTD" secondAttribute="leadingMargin" id="F9l-jo-E9G"/>
                             <constraint firstItem="hIL-6c-dwF" firstAttribute="top" secondItem="htL-x1-KGA" secondAttribute="bottom" constant="20" id="XfM-Dt-lLu"/>
                             <constraint firstItem="htL-x1-KGA" firstAttribute="trailing" secondItem="efF-YJ-DTD" secondAttribute="trailingMargin" id="Zav-pa-uRG"/>
+                            <constraint firstItem="hIL-6c-dwF" firstAttribute="top" secondItem="vs4-HU-799" secondAttribute="bottom" constant="20" id="kOh-m3-WGe"/>
                             <constraint firstItem="hIL-6c-dwF" firstAttribute="top" secondItem="Oph-7N-vuo" secondAttribute="bottom" constant="20" id="niA-lb-gCF"/>
                             <constraint firstItem="gUJ-ga-px5" firstAttribute="centerX" secondItem="efF-YJ-DTD" secondAttribute="centerX" id="zYk-NP-ybw"/>
                         </constraints>
@@ -195,12 +220,15 @@
                                 <exclude reference="htL-x1-KGA"/>
                                 <exclude reference="Oph-7N-vuo"/>
                                 <exclude reference="gUJ-ga-px5"/>
+                                <exclude reference="vs4-HU-799"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ClB-Dr-fSz"/>
                                 <exclude reference="zYk-NP-ybw"/>
                                 <exclude reference="F9l-jo-E9G"/>
+                                <exclude reference="0Yj-hY-nuO"/>
                                 <exclude reference="XfM-Dt-lLu"/>
+                                <exclude reference="kOh-m3-WGe"/>
                                 <exclude reference="niA-lb-gCF"/>
                                 <exclude reference="Zav-pa-uRG"/>
                             </mask>
@@ -210,18 +238,22 @@
                                 <include reference="htL-x1-KGA"/>
                                 <include reference="Oph-7N-vuo"/>
                                 <include reference="gUJ-ga-px5"/>
+                                <include reference="vs4-HU-799"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ClB-Dr-fSz"/>
                                 <include reference="zYk-NP-ybw"/>
                                 <include reference="F9l-jo-E9G"/>
+                                <include reference="0Yj-hY-nuO"/>
                                 <include reference="XfM-Dt-lLu"/>
+                                <include reference="kOh-m3-WGe"/>
                                 <include reference="niA-lb-gCF"/>
                                 <include reference="Zav-pa-uRG"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="TimerLbl" destination="vs4-HU-799" id="IkR-TC-wX5"/>
                         <outlet property="noBtn" destination="Oph-7N-vuo" id="p6Y-Tm-FAy"/>
                         <outlet property="titleLbl" destination="gUJ-ga-px5" id="PRB-RQ-Rd9"/>
                         <outlet property="yesBtn" destination="htL-x1-KGA" id="Cok-7J-szY"/>
