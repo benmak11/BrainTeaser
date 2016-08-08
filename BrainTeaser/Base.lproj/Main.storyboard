@@ -223,13 +223,13 @@
                                 <exclude reference="vs4-HU-799"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ClB-Dr-fSz"/>
-                                <exclude reference="zYk-NP-ybw"/>
-                                <exclude reference="F9l-jo-E9G"/>
-                                <exclude reference="0Yj-hY-nuO"/>
                                 <exclude reference="XfM-Dt-lLu"/>
                                 <exclude reference="kOh-m3-WGe"/>
                                 <exclude reference="niA-lb-gCF"/>
+                                <exclude reference="ClB-Dr-fSz"/>
+                                <exclude reference="zYk-NP-ybw"/>
+                                <exclude reference="0Yj-hY-nuO"/>
+                                <exclude reference="F9l-jo-E9G"/>
                                 <exclude reference="Zav-pa-uRG"/>
                             </mask>
                         </variation>
@@ -241,13 +241,13 @@
                                 <include reference="vs4-HU-799"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ClB-Dr-fSz"/>
-                                <include reference="zYk-NP-ybw"/>
-                                <include reference="F9l-jo-E9G"/>
-                                <include reference="0Yj-hY-nuO"/>
                                 <include reference="XfM-Dt-lLu"/>
                                 <include reference="kOh-m3-WGe"/>
                                 <include reference="niA-lb-gCF"/>
+                                <include reference="ClB-Dr-fSz"/>
+                                <include reference="zYk-NP-ybw"/>
+                                <include reference="0Yj-hY-nuO"/>
+                                <include reference="F9l-jo-E9G"/>
                                 <include reference="Zav-pa-uRG"/>
                             </mask>
                         </variation>

@@ -114,11 +114,11 @@ class GameVC: UIViewController {
                 current.statusImage.hidden = false
                 current.statusImage.image = UIImage(named: (isCorrect) ? "correct" : "error")
                 currentAnswersCorrect = (isCorrect) ? currentAnswersCorrect + 1 : currentAnswersCorrect
-                print("The current is like the previous")
+                //print("The current is like the previous")
             } else {
                 current.statusImage.hidden = false
                 current.statusImage.image = UIImage(named: (!isCorrect) ? "correct" : "error")
-                print("The current is not like the previous")
+                //print("The current is not like the previous")
             }
         }
     }
