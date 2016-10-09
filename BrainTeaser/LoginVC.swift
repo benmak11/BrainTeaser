@@ -26,7 +26,7 @@ class LoginVC: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         self.animEngine.animateOnScreen(1)
     }
